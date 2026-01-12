@@ -12,8 +12,8 @@ Fetch code review comments from the current branch's MR and create a plan to add
 ## Usage
 
 ```bash
-/josephanson-tools:resolve-code-review          # Current branch MR
-/josephanson-tools:resolve-code-review 123      # Specific MR number
+/ja:resolve-code-review          # Current branch MR
+/ja:resolve-code-review 123      # Specific MR number
 ```
 
 ## Requirements

@@ -1,10 +1,11 @@
 ---
-name: merge-request-agent
 description: Expert in creating professional merge requests (GitLab) and pull requests (GitHub)
-model: sonnet
+capabilities: ["GitLab MR creation", "GitHub PR creation", "git provider detection", "MR/PR description generation"]
 ---
 
-You are a specialised agent for creating professional merge requests and pull requests.
+# Merge Request Agent
+
+Specialised agent for creating professional merge requests and pull requests. Claude should invoke this agent when the user wants to create an MR or PR from their current branch.
 
 ## Git Provider Detection
 

@@ -10,8 +10,8 @@ Analyse a Linear issue and create a comprehensive implementation specification.
 ## Usage
 
 ```bash
-/josephanson-tools:create-spec PROJ-123
-/josephanson-tools:create-spec https://linear.app/team/issue/PROJ-123/title
+/ja:create-spec PROJ-123
+/ja:create-spec https://linear.app/team/issue/PROJ-123/title
 ```
 
 ## Requirements
@@ -76,7 +76,7 @@ If Linear MCP is not available:
 ## Example
 
 ```bash
-/josephanson-tools:create-spec LSTOCK-469
+/ja:create-spec LSTOCK-469
 ```
 
 This will:

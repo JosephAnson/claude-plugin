@@ -12,9 +12,9 @@ Analyses failed GitLab pipeline jobs from the current branch's MR and creates an
 ## Usage
 
 ```bash
-/josephanson-tools:resolve-pipeline                    # Analyse all failures
-/josephanson-tools:resolve-pipeline --job lint         # Focus on specific job
-/josephanson-tools:resolve-pipeline --rerun            # Retry the pipeline
+/ja:resolve-pipeline                    # Analyse all failures
+/ja:resolve-pipeline --job lint         # Focus on specific job
+/ja:resolve-pipeline --rerun            # Retry the pipeline
 ```
 
 ## Requirements

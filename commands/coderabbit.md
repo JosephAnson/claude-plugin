@@ -11,10 +11,10 @@ CodeRabbit integration for AI-powered code review with automatic issue detection
 ## Usage
 
 ```bash
-/josephanson-tools:coderabbit [command] [options]
-/josephanson-tools:coderabbit review [--scope <scope>] [--file <path>] [--fix]
-/josephanson-tools:coderabbit config
-/josephanson-tools:coderabbit help
+/ja:coderabbit [command] [options]
+/ja:coderabbit review [--scope <scope>] [--file <path>] [--fix]
+/ja:coderabbit config
+/ja:coderabbit help
 ```
 
 ## Commands
@@ -35,9 +35,9 @@ Analyse code for issues and optionally fix them.
 
 **Examples:**
 ```bash
-/josephanson-tools:coderabbit review --scope diff
-/josephanson-tools:coderabbit review --file src/components/
-/josephanson-tools:coderabbit review --no-fix --priority high
+/ja:coderabbit review --scope diff
+/ja:coderabbit review --file src/components/
+/ja:coderabbit review --no-fix --priority high
 ```
 
 ### 2. Config

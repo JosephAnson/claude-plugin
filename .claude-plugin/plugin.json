@@ -1,7 +1,7 @@
 {
-  "name": "josephanson-tools",
-  "version": "1.0.0",
-  "description": "Dev productivity: commits, MR/PR, code review, pipelines, specs, safety guardrails",
+  "name": "ja",
+  "version": "1.3.0",
+  "description": "Dev productivity: commits, MR/PR, code review, pipelines, specs, migration parity",
   "author": {
     "name": "Joseph Anson"
   },
@@ -11,6 +11,8 @@
     "pull-request",
     "code-review",
     "pipeline",
-    "safety"
+    "safety",
+    "migration",
+    "parity"
   ]
 }

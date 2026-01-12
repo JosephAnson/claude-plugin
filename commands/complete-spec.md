@@ -10,8 +10,8 @@ Implement tasks from a specification, verify with QA testing, and run code revie
 ## Usage
 
 ```bash
-/josephanson-tools:complete-spec lstock-469    # With spec name
-/josephanson-tools:complete-spec               # Prompts for selection
+/ja:complete-spec lstock-469    # With spec name
+/ja:complete-spec               # Prompts for selection
 ```
 
 ## Requirements

@@ -21,3 +21,7 @@ Talk in UK english and produce all documentation in UK english
 ## Project Context
 - @docs/ddd-architecture.md
 
+### TypeScript
+- Prefer interfaces over types for objects
+- Avoid `any`, use `unknown` for unknown types
+- Use `import type` for type-only imports (top-level, not inline)

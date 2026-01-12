@@ -1,4 +1,4 @@
-# josephanson-tools
+# claude-plugin
 
 Personal development productivity tools for Claude Code with safety guardrails, workflow automation, and autonomous loops.
 
@@ -17,7 +17,7 @@ claude --plugin-dir ~/i/josephanson-tools
 /plugin marketplace add JosephAnson/claude-plugin
 
 # Install core plugin
-/plugin install josephanson-tools@josephanson
+/plugin install ja@josephanson
 
 # Optional: Install external plugins
 /plugin install gemini-tools@josephanson
@@ -29,16 +29,16 @@ claude --plugin-dir ~/i/josephanson-tools
 
 | Command | Description |
 |---------|-------------|
-| `/josephanson-tools:commit` | Create atomic conventional commits |
-| `/josephanson-tools:create-mr` | Create GitLab merge request |
-| `/josephanson-tools:create-pr` | Create GitHub pull request |
-| `/josephanson-tools:coderabbit` | Run CodeRabbit CLI code review (requires coderabbit CLI) |
-| `/josephanson-tools:resolve-pipeline` | Fix GitLab pipeline failures |
-| `/josephanson-tools:resolve-code-review` | Address MR review comments |
-| `/josephanson-tools:create-spec` | Create spec from Linear issue |
-| `/josephanson-tools:complete-spec` | Implement spec with QA/review |
-| `/josephanson-tools:ralph-loop` | Start autonomous development loop |
-| `/josephanson-tools:cancel-ralph` | Cancel active Ralph loop |
+| `/ja:commit` | Create atomic conventional commits |
+| `/ja:create-mr` | Create GitLab merge request |
+| `/ja:create-pr` | Create GitHub pull request |
+| `/ja:coderabbit` | Run CodeRabbit CLI code review (requires coderabbit CLI) |
+| `/ja:resolve-pipeline` | Fix GitLab pipeline failures |
+| `/ja:resolve-code-review` | Address MR review comments |
+| `/ja:create-spec` | Create spec from Linear issue |
+| `/ja:complete-spec` | Implement spec with QA/review |
+| `/ja:ralph-loop` | Start autonomous development loop |
+| `/ja:cancel-ralph` | Cancel active Ralph loop |
 
 ## Safety Features
 
@@ -61,7 +61,7 @@ This plugin includes comprehensive safety guardrails:
 Implements the Ralph Wiggum technique for iterative AI development:
 
 ```bash
-/josephanson-tools:ralph-loop "Build a REST API for todos.
+/ja:ralph-loop "Build a REST API for todos.
 Requirements:
 - CRUD endpoints
 - Input validation
@@ -73,7 +73,7 @@ Output <promise>COMPLETE</promise> when done." --max-iterations 25 --completion-
 The loop continues until:
 - Completion promise detected in files/git
 - Maximum iterations reached
-- Manually cancelled with `/josephanson-tools:cancel-ralph`
+- Manually cancelled with `/ja:cancel-ralph`
 
 **Always set `--max-iterations` as your safety net.**
 
@@ -251,7 +251,7 @@ This plugin provides multiple code review approaches:
 |----------|---------|--------------|
 | **pr-review-toolkit** | 6 agents | Comprehensive: tests, errors, types, comments, simplification |
 | **code-review** | `/code-review` | 4 parallel agents with 80+ confidence threshold |
-| **CodeRabbit CLI** | `/josephanson-tools:coderabbit` | External CodeRabbit service via CLI |
+| **CodeRabbit CLI** | `/ja:coderabbit` | External CodeRabbit service via CLI |
 
 **Recommended:** Install the official Anthropic plugins:
 ```bash

@@ -16,8 +16,8 @@ The agent will:
 ## Usage
 
 ```bash
-/josephanson-tools:commit              # Auto-detect and commit all changes
-/josephanson-tools:commit "message"    # Use provided message hint
+/ja:commit              # Auto-detect and commit all changes
+/ja:commit "message"    # Use provided message hint
 ```
 
 ## Features
