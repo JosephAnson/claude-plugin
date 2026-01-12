@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--browser=chromium"]
+    },
+    "spec-workflow": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["spec-workflow-mcp@latest"]
+    },
+    "linear-server": {
+      "type": "sse",
+      "url": "https://mcp.linear.app/sse"
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-9ece7f0e-cee7-4a40-aadc-00abd29be878"]
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}

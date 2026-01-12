@@ -247,6 +247,18 @@ This plugin provides multiple code review approaches:
 /plugin install frontend-design@josephanson-tools-marketplace
 ```
 
+## MCP Servers
+
+This plugin includes pre-configured MCP servers:
+
+| Server | Type | Purpose |
+|--------|------|---------|
+| playwright | stdio | Browser automation and testing |
+| spec-workflow | stdio | Spec creation and task management |
+| linear-server | SSE | Linear issue tracking integration |
+| context7 | stdio | Up-to-date library documentation |
+| figma | HTTP | Figma design integration |
+
 ## Requirements
 
 ### Core Plugin
@@ -271,6 +283,7 @@ josephanson-tools/
 ├── .claude-plugin/
 │   ├── plugin.json
 │   └── marketplace.json
+├── .mcp.json
 ├── commands/
 │   ├── commit.md
 │   ├── create-mr.md
