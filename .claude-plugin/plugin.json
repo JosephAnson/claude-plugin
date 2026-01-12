@@ -1,7 +1,7 @@
 {
   "name": "josephanson-tools",
   "version": "1.0.0",
-  "description": "Dev productivity: commits, MR/PR, code review, pipelines, specs, safety guardrails, Ralph Wiggum loops",
+  "description": "Dev productivity: commits, MR/PR, code review, pipelines, specs, safety guardrails",
   "author": {
     "name": "Joseph Anson"
   },
@@ -11,8 +11,6 @@
     "pull-request",
     "code-review",
     "pipeline",
-    "safety",
-    "autonomous",
-    "ralph-wiggum"
+    "safety"
   ]
 }

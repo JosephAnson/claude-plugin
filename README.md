@@ -89,9 +89,15 @@ The loop continues until:
 
 ## Skills
 
-### skill-creator
+| Skill | Description |
+|-------|-------------|
+| `skill-creator` | Guide for creating Claude Code skills with validation and packaging |
+| `testing-summary` | Generate QA testing documentation from Linear issues and git commits |
+| `tanstack-query-basics` | TanStack Query fundamentals: useQuery, useMutation, cache management |
+| `tanstack-query-advanced` | Advanced patterns: optimistic updates, infinite queries, prefetching |
+| `tanstack-query-integration` | Integration with VeeValidate forms and TanStack Table |
 
-Guide for creating Claude Code skills with validation and packaging:
+### skill-creator
 
 ```bash
 # Initialise new skill
@@ -99,6 +105,15 @@ python skills/skill-creator/scripts/init_skill.py my-skill --path ./skills
 
 # Package skill
 python skills/skill-creator/scripts/package_skill.py ./skills/my-skill
+```
+
+### testing-summary
+
+Generate structured testing documentation for QA handover:
+
+```
+"Create test instructions for LSTOCK-469"
+"Generate testing summary for the last commit"
 ```
 
 ## Hooks
