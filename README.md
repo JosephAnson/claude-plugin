@@ -17,12 +17,12 @@ claude --plugin-dir ~/i/josephanson-tools
 /plugin marketplace add JosephAnson/claude-plugin
 
 # Install core plugin
-/plugin install josephanson-tools@claude-plugin
+/plugin install josephanson-tools@josephanson
 
 # Optional: Install external plugins
-/plugin install gemini-tools@claude-plugin
-/plugin install headless@claude-plugin
-/plugin install mobile@claude-plugin
+/plugin install gemini-tools@josephanson
+/plugin install headless@josephanson
+/plugin install mobile@josephanson
 ```
 
 ## Commands
@@ -117,7 +117,7 @@ This marketplace also provides access to external plugins that stay automaticall
 The official Ralph Wiggum autonomous loop plugin from Anthropic.
 
 ```bash
-/plugin install ralph-wiggum@claude-plugin
+/plugin install ralph-wiggum@josephanson
 ```
 
 ### gemini-tools
@@ -126,14 +126,14 @@ Visual analysis and UI/UX mockup generation via Gemini 3 Pro.
 **Requirements:** `GEMINI_API_KEY`, `gemini-cli`, `pngpaste`
 
 ```bash
-/plugin install gemini-tools@claude-plugin
+/plugin install gemini-tools@josephanson
 ```
 
 ### headless
 Browser automation for testing and parity checks via Playwright.
 
 ```bash
-/plugin install headless@claude-plugin
+/plugin install headless@josephanson
 ```
 
 ### mobile
@@ -149,7 +149,7 @@ Native mobile app testing via Appium for iOS and Android.
 **Requirements:** iOS Simulator and/or Android Emulator
 
 ```bash
-/plugin install mobile@claude-plugin
+/plugin install mobile@josephanson
 ```
 
 **Usage:**
@@ -162,7 +162,7 @@ Native mobile app testing via Appium for iOS and Android.
 Advanced code review using 4 parallel agents with confidence scoring (80+ threshold). Uses CLAUDE.md compliance checking and git blame analysis.
 
 ```bash
-/plugin install code-review@claude-plugin
+/plugin install code-review@josephanson
 ```
 
 **Usage:**
@@ -184,7 +184,7 @@ Comprehensive PR review with 6 specialised agents:
 | code-simplifier | Code simplification |
 
 ```bash
-/plugin install pr-review-toolkit@claude-plugin
+/plugin install pr-review-toolkit@josephanson
 ```
 
 **Usage:** Ask natural questions and the right agent triggers automatically:
@@ -206,7 +206,7 @@ Structured 7-phase feature development workflow with specialised agents:
 | 7. Summary | Document what was built |
 
 ```bash
-/plugin install feature-dev@claude-plugin
+/plugin install feature-dev@josephanson
 ```
 
 **Usage:**
@@ -219,7 +219,7 @@ Structured 7-phase feature development workflow with specialised agents:
 Creates distinctive, production-grade frontend UIs with bold aesthetics that avoid the generic AI-generated look. Focuses on typography, animations, and intentional design choices.
 
 ```bash
-/plugin install frontend-design@claude-plugin
+/plugin install frontend-design@josephanson
 ```
 
 **Features:**
@@ -240,10 +240,10 @@ This plugin provides multiple code review approaches:
 
 **Recommended:** Install the official Anthropic plugins:
 ```bash
-/plugin install code-review@claude-plugin
-/plugin install pr-review-toolkit@claude-plugin
-/plugin install feature-dev@claude-plugin
-/plugin install frontend-design@claude-plugin
+/plugin install code-review@josephanson
+/plugin install pr-review-toolkit@josephanson
+/plugin install feature-dev@josephanson
+/plugin install frontend-design@josephanson
 ```
 
 ## MCP Servers
