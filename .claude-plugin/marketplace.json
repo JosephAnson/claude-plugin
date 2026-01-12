@@ -1,0 +1,99 @@
+{
+  "name": "josephanson-tools-marketplace",
+  "description": "Joseph Anson's development productivity tools with curated external plugins",
+  "owner": {
+    "name": "Joseph Anson"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "pluginRoot": "./"
+  },
+  "plugins": [
+    {
+      "name": "josephanson-tools",
+      "source": "./",
+      "description": "Core tools: commits, MR/PR, code review, pipelines, specs, safety guardrails, Ralph Wiggum loops",
+      "version": "1.0.0"
+    },
+    {
+      "name": "gemini-tools",
+      "source": {
+        "source": "github",
+        "repo": "paddo/claude-tools",
+        "path": "plugins/gemini-tools"
+      },
+      "description": "Visual analysis and UI/UX work via Gemini 3 Pro (requires GEMINI_API_KEY)",
+      "keywords": ["gemini", "visual", "ui", "ux", "mockup"]
+    },
+    {
+      "name": "headless",
+      "source": {
+        "source": "github",
+        "repo": "paddo/claude-tools",
+        "path": "plugins/headless"
+      },
+      "description": "Browser automation via Playwright for testing and parity checks",
+      "keywords": ["playwright", "browser", "testing", "headless"]
+    },
+    {
+      "name": "mobile",
+      "source": {
+        "source": "github",
+        "repo": "paddo/claude-tools",
+        "path": "plugins/mobile"
+      },
+      "description": "Native mobile app testing via Appium for iOS/Android E2E and cross-platform parity checks",
+      "keywords": ["mobile", "appium", "ios", "android", "testing", "parity"]
+    },
+    {
+      "name": "ralph-wiggum",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code",
+        "path": "plugins/ralph-wiggum"
+      },
+      "description": "Official Anthropic Ralph Wiggum autonomous loop plugin",
+      "keywords": ["autonomous", "loop", "iteration", "ralph"]
+    },
+    {
+      "name": "code-review",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code",
+        "path": "plugins/code-review"
+      },
+      "description": "Official Anthropic code review with 4 parallel agents and confidence scoring (80+ threshold)",
+      "keywords": ["review", "pr", "pull-request", "agents", "confidence"]
+    },
+    {
+      "name": "pr-review-toolkit",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code",
+        "path": "plugins/pr-review-toolkit"
+      },
+      "description": "6 specialised PR review agents: comment-analyzer, test-analyzer, silent-failure-hunter, type-design-analyzer, code-reviewer, code-simplifier",
+      "keywords": ["review", "pr", "tests", "types", "errors", "comments", "simplify"]
+    },
+    {
+      "name": "feature-dev",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code",
+        "path": "plugins/feature-dev"
+      },
+      "description": "7-phase feature development workflow: discovery, exploration, questions, architecture, implementation, review, summary",
+      "keywords": ["feature", "development", "workflow", "architecture", "explorer", "architect"]
+    },
+    {
+      "name": "frontend-design",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code",
+        "path": "plugins/frontend-design"
+      },
+      "description": "Distinctive, production-grade frontend UIs with bold aesthetics, typography, animations - avoids generic AI look",
+      "keywords": ["frontend", "design", "ui", "ux", "css", "aesthetics", "animations"]
+    }
+  ]
+}
