@@ -10,13 +10,11 @@ Personal development productivity tools for Claude Code with safety guardrails, 
 claude --plugin-dir ~/i/josephanson-tools
 ```
 
-### From Private GitHub Repository
-
-After pushing to a private GitHub repo:
+### From GitHub Repository
 
 ```bash
 # Add marketplace
-/plugin marketplace add josephanson/josephanson-tools
+/plugin marketplace add JosephAnson/claude-plugin
 
 # Install core plugin
 /plugin install josephanson-tools@josephanson-tools-marketplace
@@ -24,6 +22,7 @@ After pushing to a private GitHub repo:
 # Optional: Install external plugins
 /plugin install gemini-tools@josephanson-tools-marketplace
 /plugin install headless@josephanson-tools-marketplace
+/plugin install mobile@josephanson-tools-marketplace
 ```
 
 ## Commands
