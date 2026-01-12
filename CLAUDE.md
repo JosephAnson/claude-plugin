@@ -3,10 +3,21 @@
 When reporting information, be extremely concise and sacrifice grammar for concision.
 Talk in UK english and produce all documentation in UK english
 
-## MCP Tools
+# Commit Messages
+- NO Claude attribution
+- NO "Generated with" footers
+- Use conventional commits (feat:, fix:, etc.)
+- First line under 72 characters
 
-Always create specs from spec mcp server in `.claude/specs/{task-name}`
+# Code Style
+- DO NOT over-engineer
+- DO NOT add features I didn't request
+- Keep solutions simple and direct
+- Prefer boring, readable code
+
+## MCP Tools
+- Always create specs from spec mcp server in `.claude/specs/{task-name}`
 
 ## Project Context
+- @docs/ddd-architecture.md
 
-@docs/ddd-architecture.md
