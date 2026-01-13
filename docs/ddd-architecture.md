@@ -3,9 +3,9 @@
 ## Structure
 
 Path: `components/[Domain]/[Feature]/[Function]/`
-File: `[Domain][Feature][Function][Name].vue`
+File: `[Name].vue` (short names, Nuxt auto-generates full path prefix)
 
-Kebab folders → PascalCase prefixes.
+Kebab folders → Nuxt handles PascalCase resolution.
 
 ## Hierarchy
 
@@ -27,11 +27,11 @@ Kebab folders → PascalCase prefixes.
 
 ## Examples
 
-| Path                            | Filename                              |
-| ------------------------------- | ------------------------------------- |
-| `patient-care/plans/list/`      | `PatientCarePlansListActive.vue`      |
-| `patient-care/laboratory/card/` | `PatientCareLaboratoryCardResult.vue` |
-| `inventory/stock/actions/`      | `InventoryStockActionsAdjust.vue`     |
+| Path                            | Filename         | Nuxt Component Name                   |
+| ------------------------------- | ---------------- | ------------------------------------- |
+| `patient-care/plans/list/`      | `Active.vue`     | `PatientCarePlansListActive`          |
+| `patient-care/laboratory/card/` | `Result.vue`     | `PatientCareLaboratoryCardResult`     |
+| `inventory/stock/actions/`      | `Adjust.vue`     | `InventoryStockActionsAdjust`         |
 
 ## Rules
 
@@ -45,11 +45,12 @@ Kebab folders → PascalCase prefixes.
 
 Before creating, verify:
 
-1. **Filename matches path** - `inventory/stock/list/` → starts with `InventoryStockList`
-2. **No generic names** - never `Create.vue`, `Index.vue`, `Form.vue`, `List.vue`
-3. **Correct function folder** - form logic in `form/`, not `dialog/`
-4. **Single responsibility** - one component = one purpose
-5. **Import direction** - lower domains can import from higher, not reverse
+1. **Path provides context** - folder structure determines the full component name
+2. **Short descriptive filename** - `Active.vue`, `Result.vue`, `Adjust.vue`
+3. **No generic names** - never `Main.vue`, `Default.vue`, `Component.vue`
+4. **Correct function folder** - form logic in `form/`, not `dialog/`
+5. **Single responsibility** - one component = one purpose
+6. **Import direction** - lower domains can import from higher, not reverse
 
 ## Translations
 
