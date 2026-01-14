@@ -203,7 +203,11 @@ cd {project-dir} && {format-cmd}
 
 Ensure no lint errors remain in any project.
 
-### 10. Check Completion
+### 10. Pre-Commit Verification
+
+Before declaring complete, run `/ja:pre-commit --skip-mr` to ensure all quality gates pass.
+
+### 11. Check Completion
 
 Read `.claude/.migrate-parity-state.md`. Check if:
 - Parity status = PASS
@@ -218,7 +222,7 @@ If COMPLETE:
 - Invoke `@code-reviewer` agent for final review
 - If review approved, output completion promise
 
-### 11. Final Output
+### 12. Final Output
 
 When all conditions met:
 

@@ -50,7 +50,9 @@ For each discussion thread:
 
 Group by type:
 - **Required Changes**: Must fix before merge
+- **Type Issues**: mypy/static type errors flagged by reviewers or CI
 - **Suggestions**: Optional improvements
+- **Nitpicks**: Minor stylistic preferences (often prefixed with "nit:" or "nitpick:")
 - **Questions**: Need response/clarification
 
 Group by file for efficient resolution.
@@ -76,15 +78,27 @@ Group by file for efficient resolution.
 **Comment**: "Missing null check here"
 **Resolution**: Add null check
 
-### Suggestions (Optional)
+### Type Issues
 
 #### Thread 3: [filename:line]
+**Error**: `Argument 1 to "foo" has incompatible type "str | None"; expected "str"`
+**Resolution**: Add None check or update type signature
+
+### Suggestions (Optional)
+
+#### Thread 4: [filename:line]
 **Comment**: "This could be simplified"
 **Decision**: Will implement / Will skip (reason)
 
+### Nitpicks (Optional)
+
+#### Thread 5: [filename:line]
+**Comment**: "nit: prefer const over let here"
+**Decision**: Will fix / Will skip (reason)
+
 ### Questions
 
-#### Thread 4: [filename:line]
+#### Thread 6: [filename:line]
 **Question**: "Why did you choose this approach?"
 **Response**: [Your response]
 
@@ -92,9 +106,11 @@ Group by file for efficient resolution.
 
 Implementation order:
 1. Fix required changes
-2. Address suggestions (if applicable)
-3. Respond to questions
-4. Request re-review
+2. Fix type issues
+3. Address suggestions (if applicable)
+4. Fix nitpicks (if applicable)
+5. Respond to questions
+6. Request re-review
 ```
 
 ### 6. Implement Resolutions (If Approved)
@@ -105,9 +121,10 @@ For each resolution:
 3. Track progress with TodoWrite
 
 After all fixes:
-- Commit changes
-- Push to update MR
-- Suggest re-requesting review
+1. Run `/ja:pre-commit --skip-mr` to verify typecheck, tests, and formatting
+2. Commit changes
+3. Push to update MR
+4. Suggest re-requesting review
 
 ## Edge Cases
 
