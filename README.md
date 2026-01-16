@@ -37,6 +37,7 @@ claude --plugin-dir ~/i/josephanson-tools
 | `/ja:resolve-code-review` | Address MR review comments |
 | `/ja:create-spec` | Create spec from Linear issue |
 | `/ja:complete-spec` | Implement spec with QA/review |
+| `/ja:migrate-parity` | Iterative migration validation with parity checks, tests, and code review |
 | `/ja:ralph-loop` | Start autonomous development loop |
 | `/ja:cancel-ralph` | Cancel active Ralph loop |
 
