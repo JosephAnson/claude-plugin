@@ -80,6 +80,7 @@ For each project:
 cd {project-dir} && {test-cmd}
 ```
 
+**Python projects:** Require 100% test coverage on all changed files.
 **On failure:** Fix failing tests or underlying code.
 
 ### 5. Run Formatting/Linting
