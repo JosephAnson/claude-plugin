@@ -37,11 +37,12 @@ Run each of these commands in sequence:
 /plugin install nuxt-ui@nuxt-skills
 /plugin install nuxt-content@nuxt-skills
 /plugin install reka-ui@nuxt-skills
-/plugin install vueuse@nuxt-skills
 /plugin install ts-library@nuxt-skills
 /plugin install document-writer@nuxt-skills
 /plugin install nuxt-modules@nuxt-skills
 /plugin install nuxt-better-auth@nuxt-skills
+
+npx skills add vueuse/skills
 ```
 
 ## Note

@@ -1,6 +1,6 @@
 {
   "name": "ja",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Dev productivity: commits, MR/PR, code review, pipelines, specs, migration parity",
   "author": {
     "name": "Joseph Anson"
