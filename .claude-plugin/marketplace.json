@@ -5,7 +5,7 @@
     "name": "Joseph Anson"
   },
   "metadata": {
-    "version": "1.6.0",
+    "version": "1.7.0",
     "pluginRoot": "./"
   },
   "plugins": [
@@ -13,7 +13,7 @@
       "name": "ja",
       "source": "./",
       "description": "Core tools: commits, MR/PR, code review, pipelines, specs, safety guardrails",
-      "version": "1.6.0"
+      "version": "1.7.0"
     }
   ]
 }
