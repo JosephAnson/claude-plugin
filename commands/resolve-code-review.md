@@ -33,8 +33,10 @@ glab mr view $(git branch --show-current) -F json
 
 ### 2. Fetch Review Threads
 
+Use `--paginate` to fetch all pages of results (GitLab defaults to 20 per page):
+
 ```bash
-glab api "/projects/<project_id>/merge_requests/<iid>/discussions" | \
+glab api --paginate "/projects/<project_id>/merge_requests/<iid>/discussions" | \
   jq '[.[] | select(.notes[0].type == "DiffNote")]'
 ```
 
