@@ -27,6 +27,15 @@ npx skills add https://github.com/antfu-collective/eslint-vitest-rule-tester --s
 npx skills add https://github.com/obra/superpowers --skill using-git-worktrees
 npx skills add https://github.com/obra/superpowers --skill subagent-driven-development
 
+npx skills add https://github.com/JosephAnson/claude-plugin --skill api-patterns
+npx skills add https://github.com/JosephAnson/claude-plugin --skill chrome-cdp
+npx skills add https://github.com/JosephAnson/claude-plugin --skill database
+npx skills add https://github.com/JosephAnson/claude-plugin --skill testing-summary
+npx skills add https://github.com/JosephAnson/claude-plugin --skill testing
+npx skills add https://github.com/JosephAnson/claude-plugin --skill code-simplifier
+npx skills add https://github.com/JosephAnson/claude-plugin --skill feature-dev
+npx skills add https://github.com/JosephAnson/claude-plugin --skill pr-review-toolkit
+
 npx skills add https://github.com/affaan-m/everything-claude-code --skill api-design
 npx skills add https://github.com/noartem/laravel-vue-skills --skill shadcn-vue
 npx skills add https://github.com/existential-birds/beagle --skill tailwind-v4

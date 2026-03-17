@@ -55,7 +55,7 @@ Use TodoWrite to track:
 - [ ] Run tests (all projects)
 - [ ] Run formatting/linting (all projects)
 - [ ] Check MR comments (if applicable)
-- [ ] Run code review
+- [ ] Run code review and simplifier (review-pr)
 ```
 
 ### 3. Run Typecheck
@@ -109,12 +109,9 @@ glab api "/projects/<project_id>/merge_requests/<iid>/discussions" | \
 - List them with file:line and comment summary
 - Ask user whether to resolve now or skip
 
-### 7. Run Code Review
+### 7. Run Code Review and Simplifier
 
-Invoke `pr-review-toolkit:code-reviewer` agent on unstaged/staged changes:
-```bash
-git diff HEAD
-```
+Delegate to `/review-pr code errors simplify` to review and simplify all changed code.
 
 **On issues found:** Present findings, ask user to confirm fixes or skip.
 
@@ -142,7 +139,7 @@ git diff HEAD
 - Unresolved: {count}
 - Status: {CLEAR/PENDING}
 
-### Code Review
+### Code Review & Simplifier
 - Status: {APPROVED/ISSUES}
 
 ---

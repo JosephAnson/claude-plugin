@@ -25,8 +25,6 @@ Run each of these commands in sequence:
 /plugin install code-review@claude-plugins-official
 /plugin install pr-review-toolkit@claude-plugins-official
 /plugin install feature-dev@claude-plugins-official
-/plugin install frontend-design@claude-plugins-official
-/plugin install mobile@paddo-tools
 ```
 
 ## Note

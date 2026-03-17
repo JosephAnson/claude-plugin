@@ -54,14 +54,14 @@ mcp__spec-workflow__specs-workflow({
 
 ### 4. Run QA Testing
 
-Once all tasks complete, invoke `@qa-tester` agent:
+Once all tasks complete, run `/ja:qa-test`:
 
 ```
-@qa-tester Test the {feature-name} implementation
+/ja:qa-test {feature-name} implementation
 ```
 
-The QA tester will:
-- Use Playwright to test the feature
+This will:
+- Use browser automation to test the feature
 - Verify happy paths and edge cases
 - Check accessibility
 - Report any issues
@@ -70,16 +70,16 @@ The QA tester will:
 
 ### 5. Run Code Review
 
-After QA passes, invoke `@code-reviewer` agent:
+After QA passes, run `/review-pr code errors simplify`:
 
 ```
-@code-reviewer Review the {feature-name} implementation
+/review-pr code errors simplify
 ```
 
-The code reviewer will:
+This will:
 - Review code quality and patterns
-- Check TypeScript types
-- Verify project standards
+- Hunt for silent failures and error handling issues
+- Simplify and refine changed code
 - Provide approval status
 
 **Address any requested changes.**

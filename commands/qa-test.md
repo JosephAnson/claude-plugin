@@ -1,11 +1,18 @@
 ---
-description: QA testing specialist for verifying functionality using browser automation
-capabilities: ["functional testing", "edge case testing", "accessibility testing", "responsive testing", "browser automation", "test reporting"]
+description: QA test a feature using browser automation
+argument-hint: [feature-description]
 ---
 
-# QA Tester
+# QA Test
 
-QA testing specialist that verifies completed work, tests functionality, checks edge cases, and validates user flows using browser automation. Claude should invoke this agent when testing features or validating implementations.
+Verify completed work, test functionality, check edge cases, and validate user flows using browser automation.
+
+## Usage
+
+```bash
+/ja:qa-test "Login form validation"
+/ja:qa-test                           # Prompts for what to test
+```
 
 ## Testing Approach
 
@@ -22,8 +29,6 @@ Before testing:
 ```bash
 # Check if dev server is running
 curl -s http://localhost:3000 > /dev/null && echo "Server running" || echo "Server not running"
-
-# If not running, provide instructions
 ```
 
 ### 3. Test Categories
@@ -54,27 +59,21 @@ curl -s http://localhost:3000 > /dev/null && echo "Server running" || echo "Serv
 
 ### 4. Browser Automation
 
-Use Playwright tools for automated testing:
+Use Chrome DevTools MCP tools for automated testing:
 
 ```javascript
 // Navigate to page
-await browser_navigate({ url: "http://localhost:3000/path" })
+mcp__chrome-devtools__navigate_page({ url: "http://localhost:3000/path" })
 
 // Take snapshot to understand page structure
-await browser_snapshot()
+mcp__chrome-devtools__take_snapshot()
 
 // Interact with elements
-await browser_click({ element: "Submit button", ref: "ref123" })
-await browser_type({ element: "Email input", ref: "ref456", text: "test@example.com" })
-
-// Fill forms
-await browser_fill_form({ fields: [
-  { name: "Email", type: "textbox", ref: "ref1", value: "test@example.com" },
-  { name: "Password", type: "textbox", ref: "ref2", value: "password123" }
-]})
+mcp__chrome-devtools__click({ selector: "button[type='submit']" })
+mcp__chrome-devtools__fill({ selector: "input[name='email']", value: "test@example.com" })
 
 // Take screenshot for evidence
-await browser_take_screenshot({ filename: "test-result.png" })
+mcp__chrome-devtools__take_screenshot()
 ```
 
 ### 5. Test Report Format
