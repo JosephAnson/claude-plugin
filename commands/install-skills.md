@@ -15,6 +15,8 @@ Then run each confirmed command in sequence:
 ### Individual Skills
 
 ```
+npx skills add https://nordhealth.design
+
 npx skills add https://github.com/anthropics/skills --skill frontend-design
 npx skills add https://github.com/anthropics/skills --skill skill-creator
 
