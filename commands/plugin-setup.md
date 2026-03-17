@@ -4,7 +4,8 @@ description: Install all recommended plugins and marketplaces
 
 # Setup Plugins
 
-Install all recommended Claude Code plugins and marketplaces.
+Install all recommended Claude Code plugins and marketplaces. First, present the full list of plugins to install and use AskUserQuestion to ask the user if they want to proceed or remove any from the list.
+
 
 ## Instructions
 
@@ -14,9 +15,6 @@ Run each of these commands in sequence:
 
 ```
 /plugin marketplace add JosephAnson/claude-plugin
-/plugin marketplace add paddo/claude-tools
-/plugin marketplace add jimliu/baoyu-skills
-/plugin marketplace add onmax/nuxt-skills
 ```
 
 ### Plugins
@@ -28,21 +26,7 @@ Run each of these commands in sequence:
 /plugin install pr-review-toolkit@claude-plugins-official
 /plugin install feature-dev@claude-plugins-official
 /plugin install frontend-design@claude-plugins-official
-/plugin install gemini-tools@paddo-tools
-/plugin install headless@paddo-tools
 /plugin install mobile@paddo-tools
-/plugin install content-skills@baoyu-skills
-/plugin install vue@nuxt-skills
-/plugin install nuxt@nuxt-skills
-/plugin install nuxt-ui@nuxt-skills
-/plugin install nuxt-content@nuxt-skills
-/plugin install reka-ui@nuxt-skills
-/plugin install ts-library@nuxt-skills
-/plugin install document-writer@nuxt-skills
-/plugin install nuxt-modules@nuxt-skills
-/plugin install nuxt-better-auth@nuxt-skills
-
-npx skills add vueuse/skills
 ```
 
 ## Note
