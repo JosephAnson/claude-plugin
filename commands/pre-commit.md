@@ -41,7 +41,7 @@ For each detected project, auto-detect commands:
 - `pyproject.toml` exists → `pytest`
 
 **Format/Lint:**
-- `.pre-commit-config.yaml` exists → `pre-commit run --all-files`
+- `.pre-commit-config.yaml` exists in repo root → `pre-commit run --all-files` (run from `/app`)
 - `pnpm-lock.yaml` exists → `pnpm lint:fix`
 - `pyproject.toml` exists → `ruff format && ruff check --fix`
 - else → `npm run lint:fix`
@@ -55,6 +55,7 @@ Use TodoWrite to track:
 - [ ] Run tests (all projects)
 - [ ] Run formatting/linting (all projects)
 - [ ] Check MR comments (if applicable)
+- [ ] Check team conventions
 - [ ] Run code review and simplifier (review-pr)
 ```
 
@@ -109,13 +110,26 @@ glab api "/projects/<project_id>/merge_requests/<iid>/discussions" | \
 - List them with file:line and comment summary
 - Ask user whether to resolve now or skip
 
-### 7. Run Code Review and Simplifier
+### 7. Check Team Conventions
+
+Review all changed files (Vue components, composables, translations) against team conventions using the `team-conventions` skill.
+
+Run on staged/changed `.vue` and `.ts` files:
+```bash
+git diff --name-only HEAD | grep -E '\.(vue|ts)$'
+```
+
+For each changed file, apply the `team-conventions` skill and verify against its pre-review checklist.
+
+**On issues found:** Present findings and fix automatically where possible, ask user to confirm.
+
+### 8. Run Code Review and Simplifier
 
 Delegate to `/review-pr code errors simplify` to review and simplify all changed code.
 
 **On issues found:** Present findings, ask user to confirm fixes or skip.
 
-### 8. Final Report
+### 9. Final Report
 
 ```markdown
 ## Pre-Commit Checks Complete
@@ -139,6 +153,9 @@ Delegate to `/review-pr code errors simplify` to review and simplify all changed
 - Unresolved: {count}
 - Status: {CLEAR/PENDING}
 
+### Team Conventions
+- Status: {PASS/ISSUES}
+
 ### Code Review & Simplifier
 - Status: {APPROVED/ISSUES}
 
@@ -156,6 +173,7 @@ Delegate to `/review-pr code errors simplify` to review and simplify all changed
 | Tests timeout | Retry once, then report |
 | No MR for branch | Skip MR check silently |
 | glab not installed | Skip MR check with warning |
+| No Vue/TS files changed | Skip team conventions check silently |
 | Code review finds issues | Present issues, ask user decision |
 
 ## Strict Rules
