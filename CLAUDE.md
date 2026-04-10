@@ -18,9 +18,6 @@ Talk in UK english and produce all documentation in UK english
 ## MCP Tools
 - Always create specs from spec mcp server in `.claude/specs/{task-name}`
 
-## Project Context
-- @docs/ddd-architecture.md
-
 ### TypeScript
 - Prefer interfaces over types for objects
 - Avoid `any`, use `unknown` for unknown types

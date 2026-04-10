@@ -39,6 +39,7 @@ npx skills add https://github.com/JosephAnson/claude-plugin --skill testing -y -
 npx skills add https://github.com/JosephAnson/claude-plugin --skill feature-dev -y -g
 npx skills add https://github.com/JosephAnson/claude-plugin --skill pr-review-toolkit -y -g
 npx skills add https://github.com/JosephAnson/claude-plugin --skill audit-setup -y -g
+npx skills add https://github.com/JosephAnson/claude-plugin --skill ddd-architecture -y -g
 
 npx skills add https://github.com/affaan-m/everything-claude-code --skill api-design -y -g
 npx skills add https://github.com/noartem/laravel-vue-skills --skill shadcn-vue -y -g
